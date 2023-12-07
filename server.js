@@ -18,11 +18,12 @@ app.use(express.json());
 require('dotenv').config({path: './env/.env'});
 
 // Set cookies
-app.use(cookieParser)
+// app.use(cookieParser);
 
 // test route
 app.get('/', (request, response) => {
-    response.send('Ruta principal "/" backend');
+    // response.send('Ruta principal "/" backend');
+    response.render('index');
 });
 
 app.listen(port, () => {
