@@ -1,7 +1,7 @@
 {
-  "name": "practice",
-  "version": "1.0.0",
-  "description": "",
+  "name": "login_node_jwt",
+  "version": "0.0.0",
+  "description": "Practica login integrador Node",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "dev": "node --watch server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mauricio Cox",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
