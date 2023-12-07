@@ -17,14 +17,17 @@ app.use(express.json());
 // Enviroment Variables con dotEnvjs
 require('dotenv').config({path: './env/.env'});
 
-// Set cookies
+// Set cookies (mantenerlo comentado hasta que se configure especificamente)
 // app.use(cookieParser);
 
-// test route
-app.get('/', (request, response) => {
-    // response.send('Ruta principal "/" backend');
-    response.render('index');
-});
+// // test route
+// app.get('/', (request, response) => {
+//     // response.send('Ruta principal "/" backend');
+//     response.render('index');
+// });
+// Llamamos al enrutador
+
+app.use('/', require('./routes/route'));
 
 app.listen(port, () => {
     console.log(`Servidor ejecutandose en http://localhost:${port}`);

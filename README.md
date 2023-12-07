@@ -1,4 +1,5 @@
 # Login de usuario Node
+<!-- https://youtube.com/playlist?list=PLrAw40DbN0l2gSLR8enPdvJNxExzbt3TF&si=XbnnYP5aIPrIwzQC -->
 
 1 - Ejemplo de registro e inicio de sesion de usuario utilizano como base de datos, `MySQL`, control y encriptacion de datos con `JWT` y `Bcryptjs`, configuracion de variables de entorno con `Dotenv`, generacion y manejo de `Cookies`.
 
