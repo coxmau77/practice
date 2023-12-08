@@ -13,4 +13,8 @@ route.get('/register', (request, response) => {
     response.render('register');
 });
 
+route.get('/signin', (request, response) => {
+    response.render('signin');
+});
+
 module.exports = route;
