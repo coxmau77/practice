@@ -3,8 +3,8 @@ const route = express.Router();
 const connectDb = require('../database/db');
 
 route.get('/', (request, response) => {
-    connectDb(); // probar conexion a db
     response.render('index');
+    // connectDb(); // probar conexion a db
 });
 
 route.get('/login', (request, response) => {
@@ -15,7 +15,7 @@ route.get('/register', (request, response) => {
     response.render('register');
 });
 
-route.get('/signin', (request, response) => {
+route.post('/signin', (request, response) => {
     response.render('signin');
 });
 

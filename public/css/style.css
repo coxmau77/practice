@@ -1,3 +1,32 @@
+:root {
+    --clr-primary: fuchsia;
+}
+
 html {
     background-color: aliceblue;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.175);
+}
+
+body {
+    background-color: green;
+}
+
+.btn-primary {
+    background-color: fuchsia;
+    font-weight: 600;
+    color: white;
+    border-color: rgb(208, 1, 208);
+
+    &:hover,
+    &:active {
+        background-color: tomato;
+        border-color: rgb(36, 30, 8);
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 3px rgb(255, 0, 43);
+    }
 }
