@@ -1,7 +1,9 @@
 const express = require('express');
 const route = express.Router();
+const connectDb = require('../database/db');
 
 route.get('/', (request, response) => {
+    connectDb(); // probar conexion a db
     response.render('index');
 });
 
