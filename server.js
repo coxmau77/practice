@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Enviroment Variables con dotEnvjs
-require('dotenv').config({path: './env/.env'});
+require('dotenv').config({ path: './env/.env' });
 
 // Set cookies (mantenerlo comentado hasta que se configure especificamente)
 // app.use(cookieParser);
