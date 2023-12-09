@@ -31,7 +31,8 @@ app.use('/', require('./routes/route'));
 
 app.use((request,response, next) => {
     response.status(404).render('404', {
-        title: 'titulo dinamico en 404 error',
+        title: '404 error',
+        h1: 'Titulo principal 404 dinamico',
         description: 'Descripcion dinamica del sitio 404'
     });
 }); // 404 page
