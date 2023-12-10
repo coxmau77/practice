@@ -1,9 +1,9 @@
 const express = require('express');
 const route = express.Router();
-const connectDb = require('../database/db');
+// const connectDb = require('../database/db'); // probar conexion a db
 
 route.get('/', (request, response) => {
-    response.render('index');
+    response.render('index', {titulo: 'mi titulo dinamico'});
     // connectDb(); // probar conexion a db
 });
 
